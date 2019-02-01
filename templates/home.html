@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hompage</title>
+</head>
+<body>
+<h1>Hi there!! word coun project </h1>
+
+<form action="{% url 'count' %}">
+	
+	<textarea cols="30" rows="10" name="fulltext"></textarea><br>
+	<button type="submit">Count</button>
+
+</form>
+</body>
+</html>

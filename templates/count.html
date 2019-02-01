@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<a href="{% url 'about' %}">Back to Home </a>
+	<h1>There are {{count}} words in your entered text.</h1>
+
+<h1>Your entered text is :</h1>
+{{ftext}}
+<br>
+
+
+
+{% for word,counts in allwords %}
+
+	<b>{{ word }} : </b>
+	
+	{{counts}}
+<br>
+{% endfor %}
+</body>
+</html>
